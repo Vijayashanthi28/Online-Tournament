@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">
+                   <img src="nav logo.png">
+                </div>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" >HOME</a></li>
+                    <li><a href="tournament.html"class="active" >TOURNAMENTS</a></li>
+                    <li><a href="#pricing" id="pricing-link">PRICING</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                </ul>
+            </nav>
+            <button class="login-btn" id="login-btn">Login</button>
+        </div>
+    </header>
+
+    
+
+    <!-- Contact Modal -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content contact-modal">
+            <span class="modal-close" id="close-contact">&times;</span>
+            <h2>CONTACT US</h2>
+            <p class="service-text">We Serve Tournaments, From Large To Small!</p>
+            <p class="pricing-text">Contact Us Now For Pricing For Your Tournament</p>
+            <a href="mailto:Pricing@Skillsphereclub.Com" class="email-link">Pricing@Skillsphereclub.Com</a>
+        </div>
+    </div>
+
+    <!-- Auth Modal -->
+    <div id="auth-modal" class="modal">
+        <div class="modal-content auth-modal">
+            <span class="modal-close" id="close-auth">&times;</span>
+            
+            <div class="auth-image">
+                <img src="login.jpeg">
+            </div>
+            
+            <div class="auth-form">
+                <div class="auth-tabs">
+                    <div class="auth-tab active" data-tab="login">Login</div>
+                    <div class="auth-tab" data-tab="signup">Signup</div>
+                </div>
+
+                <!-- Login Form -->
+                <form class="form-section active" id="login-form">
+                    <div class="form-group">
+                        <input type="text" class="form-input" placeholder="Enter Your Username/Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-input" placeholder="Enter Your Password" required>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="remember-me">
+                        <label for="remember-me">Remember Me?</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Login</button>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                    
+                    <div class="divider">
+                        <span>Or</span>
+                    </div>
+                    
+                    <div class="social-login">
+                        <button type="button" class="social-btn "><img src="Google__G__logo.svg.png"></button>
+                        <button type="button" class="social-btn"><img src="facebook.png"></button>
+                        <button type="button" class="social-btn "><img src="linkedin.png"></button>
+                    </div>
+                </form>
+
+                <!-- Signup Form -->
+                <form class="form-section" id="signup-form">
+                    <div class="form-group">
+                        <input type="text" class="form-input" placeholder="Enter Your Username" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-input" placeholder="Enter Your Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-input" placeholder="Enter Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-input" placeholder="Enter Your Password" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Signup</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Main Content -->
+    <main class="chess-container">
+        <!-- Tournament Header -->
+        <div class="tournament-header">
+            <div class="chess-image"><img src="chess.png"></div>
+            <div class="tournament-info">
+                <h1>Chess</h1>
+                <h2>Date & Venue</h2>
+                <h3>Tournament Schedule:</h3>
+                <ul>
+                    <li><strong>Event Date:</strong> [July 15, 2025]</li>
+                    <li><strong>Check-In Time:</strong> [E.G., 9:00 AM IST]</li>
+                    <li><strong>Match Start Time:</strong> [E.G., 10:00 AM IST]</li>
+                    <li><strong>Result Announcement:</strong> [E.G., 6:00 PM IST]</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Content Grid -->
+        <div class="content-grid">
+            <!-- Offline Tournaments -->
+            <div class="chess-section">
+                <h3>Offline Tournaments:</h3>
+                <p>[Venue Name]</p>
+                <p>[Full Address]</p>
+                <p>[City, State, PIN]</p>
+            </div>
+
+            <!-- Eligibility Criteria -->
+            <div class="chess-section">
+                <h3>Eligibility Criteria:</h3>
+                <ul>
+                    <li>Open To Individuals Aged 13+ (Unless Stated Otherwise).</li>
+                    <li>Valid ID May Be Required For Prize Distribution.</li>
+                    <li>Some Tournaments May Require Prior Ranking Or Skill Verification</li>
+                </ul>
+            </div>
+
+            <!-- General Rules -->
+            <div class="chess-section">
+                <h3>General Rules:</h3>
+                <ul>
+                    <li>Participants Must Register Before The Deadline.</li>
+                    <li>Only One Entry Per Person Is Allowed Per Tournament.</li>
+                    <li>Use Of Unfair Means, Bots, Or Cheats Will Lead To Disqualification.</li>
+                    <li>Participants Must Follow The Code Of Conduct Set By The Organizers.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Payment Section -->
+        <div class="payment-section">
+            <h3>Quick & Secure UPI Payment</h3>
+            
+            <div class="payment-header">
+                <div class="payment-info">
+                    <p>To Complete Your Tournament Registration, Simply Scan The QR Code Below Using Any UPI App (Google Pay, PhonePe, Paytm, BHIM, Etc.).</p>
+                    
+                    <h4>Payment Instructions:</h4>
+                    <ol class="payment-steps">
+                        <li>1. Open Your Preferred UPI App.</li>
+                        <li>2. Tap On Scan & Pay.</li>
+                        <li>3. Scan The QR Code Below.</li>
+                        <li>4. Enter The Exact Amount: ₹ [Entry Fee Amount]</li>
+                        <li>5. In The Notes Or Remarks, Mention:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Your Name + Tournament Code (E.G., Ravi Kumar - CHESS25)</li>
+                        <li>6. Complete The Payment And Take A Screenshot Of The Confirmation.</li>
+                    </ol>
+                </div>
+
+                <div style="text-align: center;">
+                    <div class="qr-code"><img src="qr.png"></div>
+                    <div class="qr-label">Scan & Pay</div>
+                </div>
+            </div>
+
+           <a href="payment.html" style="text-decoration: none;"> <button class="pay-button">Pay Entry Fee</button></a>
+        </div>
+    </main>
+
+     <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo -->
+            <div class="footer-logo">
+              <img src="footerlogo.png">
+            </div>
+
+            <!-- Quick Access -->
+            <div class="footer-section">
+                <h4>QUICK ACCESS</h4>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="tournament.html">TOURNAMENTS</a></li>
+                    <li><a href="#pricing">PRICING</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                </ul>
+            </div>
+
+            <!-- Stay Connected -->
+            <div class="footer-section">
+                <h4>STAY CONNECTED</h4>
+                <ul>
+                    <li><a href="tournament.html">TOURNAMENTS</a></li>
+                    <li><a href="select tour.html">SPORTS</a></li>
+                    <li><a href="profile.html">PROFILE</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Us -->
+            <div class="footer-section">
+                <h4>CONTACT US</h4>
+                <div class="contact-info">
+                    <p><img src="f1.png"> 123 Gaming Arena Blvd,City, State, Zip Code, Country.</p>
+                    <p><img src="f2.png">  +91 XXXXXXXXXX</p>
+                    <p><img src="f3.png">  Support@Yourpartystore.Com</p>
+                </div>
+                <p style="margin-top: 15px; font-weight: 600; color:#000;">Follow With Us</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><img src="Google__G__logo.svg.png"></a>
+                    <a href="#" class="social-icon"><img src="facebook.png"></a>
+                    <a href="#" class="social-icon"><img src="insta.jpg"></a>
+                    <a href="#" class="social-icon"><img src="whatsapp.jpg"></a>
+                    <a href="#" class="social-icon"><img src="linkedin.png"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

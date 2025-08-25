@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     
+
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">
+                   <img src="nav logo.png">
+                </div>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">HOME</a></li>
+                    <li><a href="tournament.html" >TOURNAMENTS</a></li>
+                    <li><a href="#pricing" id="pricing-link">PRICING</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                </ul>
+            </nav>
+            <button class="login-btn" id="login-btn">Login</button>
+        </div>
+    </header>
+
+    
+
+    <!-- Contact Modal -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content contact-modal">
+            <span class="modal-close" id="close-contact">&times;</span>
+            <h2>CONTACT US</h2>
+            <p class="service-text">We Serve Tournaments, From Large To Small!</p>
+            <p class="pricing-text">Contact Us Now For Pricing For Your Tournament</p>
+            <a href="mailto:Pricing@Skillsphereclub.Com" class="email-link">Pricing@Skillsphereclub.Com</a>
+        </div>
+    </div>
+
+    <!-- Auth Modal -->
+    <div id="auth-modal" class="modal">
+        <div class="modal-content auth-modal">
+            <span class="modal-close" id="close-auth">&times;</span>
+            
+            <div class="auth-image">
+                <img src="login.jpeg">
+            </div>
+            
+            <div class="auth-form">
+                <div class="auth-tabs">
+                    <div class="auth-tab active" data-tab="login">Login</div>
+                    <div class="auth-tab" data-tab="signup">Signup</div>
+                </div>
+
+                <!-- Login Form -->
+                <form class="form-section active" id="login-form">
+                    <div class="form-group">
+                        <input type="text" class="form-input" placeholder="Enter Your Username/Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-input" placeholder="Enter Your Password" required>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="remember-me">
+                        <label for="remember-me">Remember Me?</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Login</button>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                    
+                    <div class="divider">
+                        <span>Or</span>
+                    </div>
+                    
+                    <div class="social-login">
+                        <button type="button" class="social-btn "><img src="Google__G__logo.svg.png"></button>
+                        <button type="button" class="social-btn"><img src="facebook.png"></button>
+                        <button type="button" class="social-btn "><img src="linkedin.png"></button>
+                    </div>
+                </form>
+
+                <!-- Signup Form -->
+                <form class="form-section" id="signup-form">
+                    <div class="form-group">
+                        <input type="text" class="form-input" placeholder="Enter Your Username" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-input" placeholder="Enter Your Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-input" placeholder="Enter Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-input" placeholder="Enter Your Password" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Signup</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+     <div class="hero-carousel">
+        <!-- Slide 1 - Marathon -->
+        <div class="slide slide-1 active">
+            <div class="slide-content">
+                <h1>Join the most exciting tournaments from anywhere in the world.</h1>
+                <p>From casual competitions to championship-level events,</p>
+                <p>find your tournament and register in just a few clicks.</p>
+            </div>
+        </div>
+
+        <!-- Slide 2 - Chess -->
+        <div class="slide slide-2">
+            <div class="slide-content">
+                <h1>Join the Ultimate Online Gaming Tournament!</h1>
+                <p>Compete with top players,</p>
+                <p>win exciting prizes, and</p>
+                <p>showcase your skills.</p>
+                <p>Register now and secure</p>
+                <p>your spot!</p>
+            </div>
+        </div>
+
+        <!-- Register Button -->
+        <button class="register-btn bottom-position">Register Now</button>
+
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <div class="indicator active" data-slide="0"></div>
+            <div class="indicator" data-slide="1"></div>
+        </div>
+    </div>
+
+
+      <div class="tournament-finder-container">
+        <h1 class="tournament-main-heading">Find the Right Tournament for You</h1>
+        <p class="tournament-intro-text">Browse by category, skill level, or region. Whether you're into gaming, sports, or academics—we have something for everyone.</p>
+        
+        <div class="tournament-categories-grid">
+            <!-- Sports Category -->
+            <div class="athletic-sports-category">
+                <h3 class="sports-category-title" >Sports</h3>
+                <div class="sports-category-image"><img src="tou1.png"></div>
+             <p class="sports-category-subtitle">Enter Sports Zone</p>
+            </div>
+            
+            <!-- Quiz & Academics Category -->
+            <div class="academic-quiz-category">
+                   <h3 class="sports-category-title" >Quiz & Academics</h3>
+                <div class="sports-category-image"><img src="tou2.png"></div>
+              <p class="sports-category-subtitle" >Challenge Your Mind</p>
+            </div>
+            
+            <!-- Creative Challenges Category -->
+            <div class="creative-arts-category">
+                 <h3 class="sports-category-title" >Creative Challenges</h3>
+                <div class="sports-category-image"><img src="tou3.png"></div>
+               <p class="sports-category-subtitle">Show Your Creativity</p>
+            </div>
+            
+            <!-- Racing Games Category -->
+            <div class="motorsport-racing-category">
+                  <h3 class="sports-category-title" >Racing Games</h3>
+                <div class="sports-category-image"><img src="tou4.png"></div>
+              <p class="sports-category-subtitle">Race to Victory</p>
+            </div>
+        </div>
+    </div>
+
+      <div class="rewards-container">
+        <div class="rewards-content">
+            <h1 class="rewards-title">Rewards</h1>
+            
+            <div class="champion-section">
+                <div class="champion-rank">1st Place Champion:</div>
+                <div class="champion-details">
+                    <div class="reward-line">Reward: Rs.20,000 Cash Prize + Trophy</div>
+                    <div class="reward-line">Bonus: Exclusive Gold Badge on Profile</div>
+                    <div class="reward-line">Tagline: "Crowned Champion of the Arena"</div>
+                </div>
+            </div>
+            
+            <div class="champion-section">
+                <div class="champion-rank">2nd Place Champion:</div>
+                <div class="champion-details">
+                    <div class="reward-line">Reward: Rs.10,000 Cash + Silver Medal</div>
+                    <div class="reward-line">Bonus: Exclusive Gold Badge on Profile</div>
+                    <div class="reward-line">Tagline: "Crowned Champion of the Arena"</div>
+                </div>
+            </div>
+            
+            <div class="champion-section">
+                <div class="champion-rank">3rd Place Champion:</div>
+                <div class="champion-details">
+                    <div class="reward-line">Reward: Rs.5,000 Cash Prize + Trophy</div>
+                    <div class="reward-line">Bonus: Exclusive Gold Badge on Profile</div>
+                    <div class="reward-line">Tagline: "Crowned Champion of the Arena"</div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="carousel-wrapper">
+            <div class="image-carousel">
+                <!-- Third Place Slide -->
+                <div class="carousel-slide third-place-slide active">
+                    <div class="trophy-container">
+                        <img src="trophy 1.png">
+                            </div>
+                        </div>
+                        
+         <!-- Second Place Slide -->
+                <div class="carousel-slide second-place-slide">
+                   <div class="trophy-container">
+                        <img src="trophy 2.png">
+                            </div>
+                        </div>
+                
+                <!-- First Place Slide -->
+                <div class="carousel-slide first-place-slide">
+                   <div class="trophy-container">
+                        <img src="trophy 3.png">
+                            </div>
+                        </div>
+            
+            <div class="navigation-dots">
+                <div class="nav-dot active" onclick="showSlide(0)"></div>
+                <div class="nav-dot" onclick="showSlide(1)"></div>
+                <div class="nav-dot" onclick="showSlide(2)"></div>
+            </div>
+        </div>
+    </div>
+      </div>
+
+      <div class="tournament-rewards-grid">
+        <!-- Top 10 Finalists Card -->
+        <div class="elite-finalists-card">
+            <div class="elite-trophy-badge">
+                <img src="final.png">
+                </div>
+             <h2 class="reward-title">Top 10 Finalists</h2>
+            <p class="reward-description">Reward: Digital Certificate + Exclusive Badge</p>
+            <p class="bonus-text">Bonus: Mention on Hall of Fame Page</p>
+            <p class="tagline-text">Tagline: "Among the elite competitors"</p>
+        </div>
+
+        <!-- MVP Card -->
+        <div class="elite-finalists-card">
+            <div class="elite-trophy-badge">
+                <img src="mvp.jpeg">
+                </div>
+            <h2 class="reward-title">MVP of the Tournament</h2>
+            <p class="reward-description">Reward: Special In-Game Item or Boost</p>
+            <p class="bonus-text">Bonus: Profile Highlight</p>
+            <p class="tagline-text">Tagline: "Most Valuable Player of the week"</p>
+        </div>
+
+        <div class="elite-finalists-card">
+            <div class="elite-trophy-badge">
+                <img src="LiveGoodTour.jpeg">
+                </div>
+            <h2 class="reward-title">Random Draw Winners</h2>
+            <p class="reward-description">Reward: Swag Pack (T-shirt, Stickers,<br>Mousepad)</p>
+            <p class="bonus-text">Bonus: Entry into exclusive mini-<br>tournament</p>
+            <p class="tagline-text">Tagline: "Because luck favors the bold"</p>
+        </div>
+
+        <!-- Participation Rewards Card -->
+        <div class="elite-finalists-card">
+            <div class="elite-trophy-badge">
+                <img src="part1.png">
+                </div>
+            <h2 class="reward-title">Participation Rewards</h2>
+            <p class="reward-description">Reward: Official Participation Certificate<br>(Downloadable)</p>
+            <p class="bonus-text">Bonus: 10 Loyalty Points</p>
+            <p class="tagline-text">Tagline: "Every competitor counts"</p>
+        </div>
+    </div>
+    
+
+
+ <div class="chess-champions-container">
+      
+    <div class="champions-header">
+            <h1 class="main-title">Chess Tournament Champions – 2024</h1>
+            <p class="subtitle-description">Meet the minds that ruled the board last year in our biggest chess tournaments!</p>
+        
+
+        <div class="champions-content">
+            <!-- Gukesh Section -->
+            <div class="gukesh-champion-section">
+                <div class="gukesh-profile-card">
+                    <div class="gukesh-photo"><img src="Gukesh Dommaraju.jpeg"></div>
+                    <div class="gukesh-nameplate">
+                        <div class="gukesh-name">Gukesh Dommaraju</div>
+                        <div class="gukesh-rating">FIDE Rating: 2787</div>
+                        <div class="gukesh-age">Age: 18</div>
+                    </div>
+                </div>
+                <div class="gukesh-achievements">
+                    <h3 class="achievements-heading">Achievements:</h3>
+                    <p class="achievement-item">Reigning World Chess Champion (2024), youngest in history at 18 years and 195 days.</p>
+                    <p class="achievement-item">Winner of the 2024 Candidates Tournament.</p>
+                    <p class="achievement-item">Gold medalist at the 2024 Chess Olympiad.</p>
+                    <p class="achievement-item">Known for exceptional calculation skills and composure under pressure.</p>
+                </div>
+            </div>
+
+            <!-- Arjun Section -->
+            <div class="arjun-section">
+                <div class="arjun-profile-card">
+                    <div class="arjun-photo"><img src="th.jpeg"></div>
+                    <div class="arjun-nameplate">
+                        <div class="arjun-name">Arjun Erigaisi</div>
+                        <div class="arjun-rating">FIDE Rating: 2782</div>
+                        <div class="arjun-age">Age: 21</div>
+                    </div>
+                </div>
+                <div class="arjun-achievements">
+                    <h3 class="achievements-heading">Achievements:</h3>
+                    <p class="achievement-item">Ranked world number 4 as of April 2024.</p>
+                    <p class="achievement-item">Notable victories in our League.</p>
+                    <p class="achievement-item">Consistent top-tier performances in international tournaments.</p>
+                </div>
+            </div>
+
+            <!-- Praggnanandhaa Section -->
+            <div class="praggnanandhaa-section">
+                <div class="praggnanandhaa-profile-card">
+                    <div class="praggnanandhaa-photo"><img src="th (1).jpeg"></div>
+                    <div class="praggnanandhaa-nameplate">
+                        <div class="praggnanandhaa-name">Praggnanandhaa</div>
+                        <div class="praggnanandhaa-rating">FIDE Rating: 2758</div>
+                        <div class="praggnanandhaa-age">Age: 19</div>
+                    </div>
+                </div>
+                <div class="praggnanandhaa-achievements">
+                    <h3 class="achievements-heading">Achievements:</h3>
+                    <p class="achievement-item">Strong performances in the Superbet Chess Classic.</p>
+                    <p class="achievement-item">Defeated top players like Nodirbek Abdusattorov.</p>
+                    <p class="achievement-item">Recognized as one of the most promising young talents globally.</p>
+                </div>
+            </div>
+
+            <div class="final-statement">
+                These players exemplify the rising prominence of Indian chess on the global stage, showcasing exceptional talent and dedication.
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+     <div class="tournament-container">
+        <div class="toheader">
+            <h1>Featured Tournaments</h1>
+            <p>Compete in the Best. Rise to the Top.</p>
+        </div>
+
+        <!-- Tournament 1: Quiz India -->
+        <div class="tournament-card active" data-tournament="0">
+            <div class="tournament-image">
+                <img src="quiz.png" alt="Quiz India">
+            </div>
+            <div class="tournament-details">
+                <h2 class="tournament-title">All-India Quiz Challenge</h2>
+                <div class="tournament-info">
+                    <div class="info-row">
+                        <span class="info-label">Category:</span>
+                        <span class="info-value">Academics & Trivia</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Date:</span>
+                        <span class="info-value">July 5, 2025</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Prizes:</span>
+                        <span class="info-value">Cash Rewards + Certificates + "Quiz Master" Title</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Format:</span>
+                        <span class="info-value">Solo | Live Online Round</span>
+                    </div>
+                </div>
+                <button class="cta-button toregister-btn">Register Now</button>
+            </div>
+        </div>
+
+        <!-- Tournament 2: Virtual Marathon -->
+        <div class="tournament-card" data-tournament="1">
+            <div class="tournament-image">
+                <img src="mara.png" alt="Virtual Marathon">
+            </div>
+            <div class="tournament-details">
+                <h2 class="tournament-title">Virtual Marathon Challenge 2025</h2>
+                <div class="tournament-info">
+                    <div class="info-row">
+                        <span class="info-label">Type:</span>
+                        <span class="info-value">Solo | Fitness & Endurance</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Date:</span>
+                        <span class="info-value">July 10 - July 20, 2025</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Format:</span>
+                        <span class="info-value">5KM / 10KM / Half Marathon</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Track:</span>
+                        <span class="info-value">Any location - submit via GPS-enabled app</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Rewards:</span>
+                        <span class="info-value">E-Certificates, Finisher Medals & Leaderboard Features</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Why Join:</span>
+                        <span class="info-value">Run at your pace, from anywhere - and earn bragging rights!</span>
+                    </div>
+                </div>
+                <button class="cta-button toregister-btn">Register Now</button>
+            </div>
+        </div>
+
+        <!-- Tournament 3: Chess Masters -->
+        <div class="tournament-card" data-tournament="2">
+            <div class="tournament-image">
+                <img src="chessplay.jpeg">
+            </div>
+               
+            <div class="tournament-details">
+                <h2 class="tournament-title">Blitz Chess Masters 2025</h2>
+                <div class="tournament-info">
+                    <div class="info-row">
+                        <span class="info-label">Type:</span>
+                        <span class="info-value">Online | Solo | Rapid Format</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Date:</span>
+                        <span class="info-value">June 15, 2025</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Rounds:</span>
+                        <span class="info-value">6 Swiss System Rounds (5+0 blitz)</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Eligibility:</span>
+                        <span class="info-value">Open to all skill levels</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Rewards:</span>
+                        <span class="info-value">₹15,000 Prize Pool + Digital Trophy + FIDE Points</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Why Join:</span>
+                        <span class="info-value">Compete with top-rated players and earn recognition</span>
+                    </div>
+                </div>
+                <button class="cta-button join-btn">Join the Challenge</button>
+            </div>
+        </div>
+
+        <!-- Tournament 4: You'll add this one -->
+        <div class="tournament-card" data-tournament="3">
+            <div class="tournament-image">
+                <img src="speed.gif" alt="Fourth Tournament">
+            </div>
+            <div class="tournament-details">
+                <h2 class="tournament-title">Solo Skill Games Championship</h2>
+                <div class="tournament-info">
+                    <div class="info-row">
+                        <span class="info-label">Type:</span>
+                        <span class="info-value">Online | Solo | Rapid Format</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Date:</span>
+                        <span class="info-value">Ongoing (Weekly Challenges)</span>
+                    </div>
+                     <div class="info-row">
+                        <span class="info-label">Games:</span>
+                        <span class="info-value">Sudoku, Speed Typing, Memory Match, Puzzle Solving</span>
+                    </div>
+                   
+                    <div class="info-row">
+                        <span class="info-label">Rewards:</span>
+                        <span class="info-value">Weekly Winners - Cash+ Skill Badges + Hall of fame</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Why Join:</span>
+                        <span class="info-value">Test Your mental availity and top the solo leaderboard</span>
+                    </div>
+                </div>
+                <button class="cta-button toregister-btn">Register Now</button>
+            </div>
+        </div>
+
+        <div class="navigation-dots">
+            <div class="dot active" data-slide="0"></div>
+            <div class="dot" data-slide="1"></div>
+            <div class="dot" data-slide="2"></div>
+            <div class="dot" data-slide="3"></div>
+        </div>
+
+      
+    </div>
+
+     <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo -->
+            <div class="footer-logo">
+              <img src="footerlogo.png">
+            </div>
+
+            <!-- Quick Access -->
+            <div class="footer-section">
+                <h4>QUICK ACCESS</h4>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="tournament.html">TOURNAMENTS</a></li>
+                    <li><a href="#pricing">PRICING</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                </ul>
+            </div>
+
+            <!-- Stay Connected -->
+            <div class="footer-section">
+                <h4>STAY CONNECTED</h4>
+                <ul>
+                    <li><a href="tournament.html">TOURNAMENTS</a></li>
+                    <li><a href="select tour.html">SPORTS</a></li>
+                    <li><a href="profile.html">PROFILE</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Us -->
+            <div class="footer-section">
+                <h4>CONTACT US</h4>
+                <div class="contact-info">
+                    <p><img src="f1.png"> 123 Gaming Arena Blvd,City, State, Zip Code, Country.</p>
+                    <p><img src="f2.png">  +91 XXXXXXXXXX</p>
+                    <p><img src="f3.png">  Support@Yourpartystore.Com</p>
+                </div>
+                <p style="margin-top: 15px; font-weight: 600; color:#000;">Follow With Us</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><img src="Google__G__logo.svg.png"></a>
+                    <a href="#" class="social-icon"><img src="facebook.png"></a>
+                    <a href="#" class="social-icon"><img src="insta.jpg"></a>
+                    <a href="#" class="social-icon"><img src="whatsapp.jpg"></a>
+                    <a href="#" class="social-icon"><img src="linkedin.png"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

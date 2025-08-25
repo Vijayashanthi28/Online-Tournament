@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="profile-creation-wrapper">
+        <h1 class="main-heading">Create Your Player Profile</h1>
+        <div class="divider-line"></div>
+        
+        <div class="profile-avatar">
+            <img src="profile.png">
+        </div>
+    
+    <div class="animation-container">
+        <div class="check-circle" id="checkCircle">
+            <div class="check-mark"></div>
+        </div>
+        
+        <!-- Rays -->
+        <div class="ray"></div>
+        <div class="ray"></div>
+        <div class="ray"></div>
+        <div class="ray"></div>
+        <div class="ray"></div>
+        <div class="ray"></div>
+        <div class="ray"></div>
+        <div class="ray"></div>
+        <div class="ray"></div>
+        <div class="ray"></div>
+        <div class="ray"></div>
+        <div class="ray"></div>
+        <div class="ray"></div>
+        <div class="ray"></div>
+        <div class="ray"></div>
+        <div class="ray"></div>
+    </div>
+    
+    <div class="success-text">Your Profile Added Successfully</div>
+    
+   <a href="select tour.html"><button class="tournament-button">Select Your Tournament</button></a> 
+
+    </div>
+    
+
+    <script>
+        // Start the animation sequence
+        window.addEventListener('load', function() {
+            const checkCircle = document.getElementById('checkCircle');
+            const rays = document.querySelectorAll('.ray');
+            
+            // Add rotation animation to the circle
+            setTimeout(() => {
+                checkCircle.classList.add('animated');
+            }, 1500);
+            
+            // Add ray blast animation
+            setTimeout(() => {
+                rays.forEach((ray, index) => {
+                    setTimeout(() => {
+                        ray.classList.add('ray-animated');
+                    }, index * 30);
+                });
+            }, 2500);
+        });
+
+        // Button click handler
+        document.querySelector('.tournament-button').addEventListener('click', function() {
+            alert('Proceeding to tournament selection!');
+        });
+        </script>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

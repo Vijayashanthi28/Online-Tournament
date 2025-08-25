@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+      <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+      <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">
+                   <img src="nav logo.png">
+                </div>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="tournament.html"  class="active">TOURNAMENTS</a></li>
+                    <li><a href="#pricing" id="pricing-link">PRICING</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                </ul>
+            </nav>
+            <button class="login-btn" id="login-btn">Login</button>
+        </div>
+    </header>
+
+    
+
+    <!-- Contact Modal -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content contact-modal">
+            <span class="modal-close" id="close-contact">&times;</span>
+            <h2>CONTACT US</h2>
+            <p class="service-text">We Serve Tournaments, From Large To Small!</p>
+            <p class="pricing-text">Contact Us Now For Pricing For Your Tournament</p>
+            <a href="mailto:Pricing@Skillsphereclub.Com" class="email-link">Pricing@Skillsphereclub.Com</a>
+        </div>
+    </div>
+
+    <!-- Auth Modal -->
+    <div id="auth-modal" class="modal">
+        <div class="modal-content auth-modal">
+            <span class="modal-close" id="close-auth">&times;</span>
+            
+            <div class="auth-image">
+                <img src="login.jpeg">
+            </div>
+            
+            <div class="auth-form">
+                <div class="auth-tabs">
+                    <div class="auth-tab active" data-tab="login">Login</div>
+                    <div class="auth-tab" data-tab="signup">Signup</div>
+                </div>
+
+                <!-- Login Form -->
+                <form class="form-section active" id="login-form">
+                    <div class="form-group">
+                        <input type="text" class="form-input" placeholder="Enter Your Username/Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-input" placeholder="Enter Your Password" required>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="remember-me">
+                        <label for="remember-me">Remember Me?</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Login</button>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                    
+                    <div class="divider">
+                        <span>Or</span>
+                    </div>
+                    
+                    <div class="social-login">
+                        <button type="button" class="social-btn "><img src="Google__G__logo.svg.png"></button>
+                        <button type="button" class="social-btn"><img src="facebook.png"></button>
+                        <button type="button" class="social-btn "><img src="linkedin.png"></button>
+                    </div>
+                </form>
+
+                <!-- Signup Form -->
+                <form class="form-section" id="signup-form">
+                    <div class="form-group">
+                        <input type="text" class="form-input" placeholder="Enter Your Username" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-input" placeholder="Enter Your Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-input" placeholder="Enter Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-input" placeholder="Enter Your Password" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Signup</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="tournament-selector-container">
+        <div class="tpage-header">
+            <h1 class="tprimary-title">Select Your Sports Tournament</h1>
+            <p class="description-text">
+                Browse Available Tournaments And Pick The One That Matches Your Interests Or Skills.
+            </p>
+        </div>
+
+        <!-- Solo Games Section -->
+        <div class="game-category-section">
+            <h2 class="category-heading">Solo Games:</h2>
+            <div class="sports-grid-layout">
+               
+                <div class="sport-card-wrapper">
+                     <a href="chess.html" style="text-decoration: none;">   <h3 class="sport-name-label">Chess</h3>
+                    <div class="sport-image-container">
+                        <img src="chess.png"></a>
+                    </div>
+                 
+                </div>
+
+                <div class="sport-card-wrapper">
+                      <h3 class="sport-name-label">Athelete</h3>
+                    <div class="sport-image-container">
+                        <img src="athelete.jpeg">
+                    </div>
+                  
+                </div>
+
+                 <div class="sport-card-wrapper">
+                      <h3 class="sport-name-label">Marathon</h3>
+                    <div class="sport-image-container">
+                        <img src="marathon.png">
+                    </div>
+            </div>
+        </div>
+
+        <!-- Solo Games Section -->
+        <div class="game-category-section">
+            <h2 class="category-heading">Team  Games:</h2>
+            <div class="sports-grid-layout">
+               
+                <div class="sport-card-wrapper">
+                        <h3 class="sport-name-label">Cricket</h3>
+                    <div class="sport-image-container">
+                        <img src="Cricket - My very favorite sport.jpeg">
+                    </div>
+                 
+                </div>
+
+                <div class="sport-card-wrapper">
+                      <h3 class="sport-name-label">Volley Ball</h3>
+                    <div class="sport-image-container">
+                        <img src="volleyball.jpeg">
+                    </div>
+                  
+                </div>
+
+                 <div class="sport-card-wrapper">
+                      <h3 class="sport-name-label">FootBall</h3>
+                    <div class="sport-image-container">
+                        <img src="football.jpeg">
+                    </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+    
+        </div>
+    </div>
+
+      <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo -->
+            <div class="footer-logo">
+              <img src="footerlogo.png">
+            </div>
+
+            <!-- Quick Access -->
+            <div class="footer-section">
+                <h4>QUICK ACCESS</h4>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="tournament.html">TOURNAMENTS</a></li>
+                    <li><a href="#pricing">PRICING</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                </ul>
+            </div>
+
+            <!-- Stay Connected -->
+            <div class="footer-section">
+                <h4>STAY CONNECTED</h4>
+                <ul>
+                    <li><a href="tournament.html">TOURNAMENTS</a></li>
+                    <li><a href="select tour.html">SPORTS</a></li>
+                    <li><a href="profile.html">PROFILE</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Us -->
+            <div class="footer-section">
+                <h4>CONTACT US</h4>
+                <div class="contact-info">
+                    <p><img src="f1.png"> 123 Gaming Arena Blvd,City, State, Zip Code, Country.</p>
+                    <p><img src="f2.png">  +91 XXXXXXXXXX</p>
+                    <p><img src="f3.png">  Support@Yourpartystore.Com</p>
+                </div>
+                <p style="margin-top: 15px; font-weight: 600; color:#000;">Follow With Us</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><img src="Google__G__logo.svg.png"></a>
+                    <a href="#" class="social-icon"><img src="facebook.png"></a>
+                    <a href="#" class="social-icon"><img src="insta.jpg"></a>
+                    <a href="#" class="social-icon"><img src="whatsapp.jpg"></a>
+                    <a href="#" class="social-icon"><img src="linkedin.png"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
